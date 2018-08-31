@@ -15,7 +15,7 @@ public class CameraManager : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.C)) {
+        if (Input.GetButtonDown("CameraToggle")) {
             currentCamerIndex++;
             
 			if (currentCamerIndex > cameras.Count - 1)
